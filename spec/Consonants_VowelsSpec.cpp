@@ -48,12 +48,14 @@ namespace spec
 			char str[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 			int consonants ;
 			int vowels ;
+			printf("here inside");
 			count_vowels_and_consonants(str, &consonants, &vowels);
 
 			Assert::AreEqual(consonants, 21, L"Consonants should be 21 for A-Z", LINE_INFO());
 
 			Assert::AreEqual(vowels, 5, L"Vowels should be 5 for A-Z", LINE_INFO());
 		}
+
 		TEST_METHOD(NULLstring)
 		{
 			char *str=NULL;
